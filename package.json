@@ -1,10 +1,20 @@
 {
   "name": "metrex",
-  "version": "0.1.0",
+  "version": "2.5.0",
   "description": "Lightweight Express middleware for a metrics dashboard with zero runtime dependencies",
   "main": "src/index.js",
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "jest",
+    "lint": "eslint src/"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.1"
   },
   "license": "MIT"
 }
